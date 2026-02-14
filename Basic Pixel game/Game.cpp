@@ -214,7 +214,7 @@ void Game::UpdatePlay()
                     sf::Vector2f vRandomPosition(std::rand() % 1920, std::rand() % 1080); //random pos based on screen size
                     enemies[j].setPosition(vRandomPosition);
 
-                    if (enemies.size() < 10 && level % 3 == 0) {//spawns enemies 
+                    if (enemies.size() < 8 && level % 3 == 0) {//spawns enemies 
                         enemies.push_back(enemy);
                         enemyMoveSpeed += 40.0f;
                     }
